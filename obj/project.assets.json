@@ -847,9 +847,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Escolar Manager\\source\\repos\\isaacEstudos\\Alunos\\Alunos.csproj",
-      "projectName": "Alunos",
-      "projectPath": "C:\\Users\\Escolar Manager\\source\\repos\\isaacEstudos\\Alunos\\Alunos.csproj",
+      "projectUniqueName": "C:\\Users\\Escolar Manager\\source\\repos\\isaacEstudos\\Alunos\\AlunosApi.csproj",
+      "projectName": "AlunosApi",
+      "projectPath": "C:\\Users\\Escolar Manager\\source\\repos\\isaacEstudos\\Alunos\\AlunosApi.csproj",
       "packagesPath": "C:\\Users\\Escolar Manager\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Escolar Manager\\source\\repos\\isaacEstudos\\Alunos\\obj\\",
       "projectStyle": "PackageReference",

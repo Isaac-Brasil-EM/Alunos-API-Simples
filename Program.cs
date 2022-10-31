@@ -7,8 +7,15 @@ var app = builder.Build();
 
 app.MapGet("/", () => "Bem Vindo a API de alunos!");
 
+/*app.MapGet("/alunos", (TesteAlunos db) => {
+        db.listaAlunos.ToListAsync();
+
+    });
+*/
 app.MapGet("/alunos", async (AlunoDb db) =>
-    await db.Alunos.ToListAsync());
+    await db.Alunos.ToListAsync()
+);
+
 
 app.MapGet("/alunos/{id}", async (int id, AlunoDb db) =>
     await db.Alunos.FindAsync(id)
@@ -21,7 +28,7 @@ app.MapPost("/alunos", async (Aluno aluno, AlunoDb db) =>
     db.Alunos.Add(aluno);
     await db.SaveChangesAsync();
 
-    return Results.Created($"/alunos/{aluno.Matricula}", aluno);
+    return Results.Created($"/alunos/{aluno.Id}", aluno);
 });
 
 app.MapPut("/alunos/{id}", async (int id, Aluno inputAluno, AlunoDb db) =>
@@ -31,7 +38,6 @@ app.MapPut("/alunos/{id}", async (int id, Aluno inputAluno, AlunoDb db) =>
     if (aluno is null) return Results.NotFound();
 
     aluno.Nome = inputAluno.Nome;
-    aluno.Matricula = inputAluno.Matricula;
     aluno.Cpf = inputAluno.Cpf;
     aluno.Nascimento = inputAluno.Nascimento;
     aluno.Sexo= inputAluno.Sexo;
@@ -62,14 +68,11 @@ public enum EnumeradorSexo
 }
 class Aluno
 {
-    public string Matricula { get; set; }
+    public int Id { get; set; }
     public string Nome { get; set; }
     public string Cpf { get; set; }
     public DateTime Nascimento { get; set; }
     public EnumeradorSexo Sexo { get; set; }
-
-
-
 
 }
 
@@ -79,4 +82,8 @@ class AlunoDb : DbContext
         : base(options) { }
 
     public DbSet<Aluno> Alunos => Set<Aluno>();
+}
+class TesteAlunos
+{
+    List<Aluno> listaAlunos = new List<Aluno>();
 }

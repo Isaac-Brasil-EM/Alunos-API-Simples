@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uSSec0wNyUKQZaBq8OG/rUrsELW59TFW7I18E57+SSOyAZcapNV16IDj9oBkZlZf4Ei+/NAr6zTUgmTJ0DpouQ==",
+  "dgSpecHash": "YFekP1BEpdgkW0gSYOKd23Nz2mL3umrOwVGqMJOOb3z/T9dSxydxOO1OAF60ZAJlresiYkuUedDPu+pBBJM1Yw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Escolar Manager\\source\\repos\\isaacEstudos\\Alunos\\Alunos.csproj",
+  "projectFilePath": "C:\\Users\\Escolar Manager\\source\\repos\\isaacEstudos\\Alunos\\AlunosApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Escolar Manager\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\6.0.10\\microsoft.aspnetcore.diagnostics.entityframeworkcore.6.0.10.nupkg.sha512",
     "C:\\Users\\Escolar Manager\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.10\\microsoft.entityframeworkcore.6.0.10.nupkg.sha512",
